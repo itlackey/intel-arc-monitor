@@ -1,19 +1,19 @@
 #!/bin/bash
 
 # Check if the first argument is given, if not, use default
-if [ -z "\$1" ]
+if [ -z "$1" ]
 then
   DRM="/sys/class/drm/card0"
 else
-  DRM="\$1"
+  DRM=$1
 fi
 
 # Check if the second argument is given, if not, use default
-if [ -z "\$2" ]
+if [ -z "$2" ]
 then
   HWMON="/sys/class/hwmon/hwmon1"
 else
-  HWMON="\$2"
+  HWMON=$2
 fi
 
 while :
